@@ -19,18 +19,6 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
 if os.environ.get('READTHEDOCS') == 'True':
     target = 'http://docs.ontomatica.com/'
 
-# Enable autodoc, intersphinx
-extensions.extend(['sphinx.ext.autodoc', 'sphinx.ext.intersphinx'])
-
-# Autodoc settings
-autodoc_default_flags = ['members', 'special-members']
-
-# Default is 'local' building, but reference the public WWW site when building
-# under RTD.
-target = join(dirname(__file__), '..', 'www', '_build')
-if os.environ.get('READTHEDOCS') == 'True':
-    target = 'http://www.fabfile.org/'
-
 # -- General configuration -----------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
