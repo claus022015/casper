@@ -17,7 +17,7 @@ sys.path.append(abspath(join(dirname(__file__), '..', '..')))
 # under RTD.
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 if os.environ.get('READTHEDOCS') == 'True':
-    target = 'docs.casper.org'
+    target = 'docs.casper-ontomatica.org'
 
 # -- General configuration -----------------------------------------------------
 
